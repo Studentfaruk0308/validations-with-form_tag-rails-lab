@@ -1,5 +1,6 @@
 Author.create!(
-  name: "Ada Lovelace", email: "ada@the-history-of-programming.com", phone_number: "5558023384"
+  name: "Ada Lovelace", 
+  email: "ada@the-history-of-programming.com", phone_number: "5558023384"
 )
 
 Post.create!(
