@@ -11,6 +11,18 @@
   </div>
   <% end %>
 
+  <%= form_for @author do |f| %>
+  <%= label_tag "name", "Name" %>
+  <%= f.text_field :name %>
+  <br>
+  <%= label_tag "email", "Email" %>
+  <%= f.text_field :email %>
+  <br>
+  <%= label_tag "phone_number", "Phone Number" %>
+  <%= f.text_field :phone_number %>
+  <%= f.submit %>
+  <% end %>
+
   <% if @author.errors[:name].empty? %>
     <div class="field">
     <% else %>
@@ -38,5 +50,5 @@
     <%= text_field_tag "phone_number", @author.phone_number %>
   </div>
 
-  <%= submit_tag "Create Author" %>
+  <%= submit_tag "Create an Author" %>
 <% end %>
