@@ -1,3 +1,10 @@
 <h2><%= @author.name %></h2>
-<%= link_to "edit", edit_author_path(@author) %>
 <a href="mailto:<%= @author.email %>"><%= @author.email %></a>
+<br>
+<br>
+<%= link_to "edit", edit_author_path(@author) %>
+<br>
+<br>
+<%= form_tag author_path(@author.id), method: "delete" do %>
+  <%= submit_tag "Delete #{@author.name}" %>
+  <% end %>

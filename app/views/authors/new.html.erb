@@ -11,6 +11,7 @@
   </div>
   <% end %>
 
+
   <%= form_for @author do |f| %>
   <%= label_tag "name", "Name" %>
   <%= f.text_field :name %>
@@ -22,6 +23,7 @@
   <%= f.text_field :phone_number %>
   <%= f.submit %>
   <% end %>
+
 
   <% if @author.errors[:name].empty? %>
     <div class="field">

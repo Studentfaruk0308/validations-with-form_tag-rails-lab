@@ -3,3 +3,11 @@
 <p>A <%= @post.category %> post.</p>
 <hr />
 <p><%= @post.content %></p>
+
+<%= button_to "Delete Post", post_path(@post), method: :delete %>
+
+<br>
+
+<%= form_tag post_path(@post.id), method: "delete" do %>
+  <%= submit_tag "Delete the Post with Title ' #{@post.title} '" %>
+  <% end %>

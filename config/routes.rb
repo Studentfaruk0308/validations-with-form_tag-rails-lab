@@ -4,12 +4,16 @@ Rails.application.routes.draw do
   # get "/authors/:id", to: "authors#show", as: "author"
   # get "/authors/:id/edit", to: "authors#edit", as: "edit_author"
   # patch "/authors/:id", to: "authors#update"
+  # config/routes.rb
+  # delete '/author/:id', to: 'author#destroy', as:'author'
 
   # get "/posts/new", to: "posts#new", as: "new_post"
   # post "/posts", to: "posts#create"
   # get "/posts/:id", to: "posts#show", as: "post"
   # get "/posts/:id/edit", to: "posts#edit", as: "edit_post"
   # patch "/posts/:id", to: "posts#update"
+  # config/routes.rb
+  # delete '/post/:id', to: 'post#destroy', as:'post'
 
   resources :authors
   resources :posts
